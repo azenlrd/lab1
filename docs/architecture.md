@@ -6,7 +6,6 @@
 ## Main components
 ![Yandex Go Component Diagram](https://raw.githubusercontent.com/inno-se-toolkit/lab-01-market-product-and-git/4020c8c7e67e80677cd44fc46e6ee6893fce94b7/docs/diagrams/out/yandex-go/architecture-component/Component%20Diagram.svg)
 
-[Yandex Go Component Diagram Code](../../docs/diagrams/src/yandex-go/component-diagram.puml)
 
 **Components Description:**
 1.  **Mobile App:** The primary client interface for users to interact with the ecosystem (order rides, food, etc.). It communicates with the backend via the API Gateway.
@@ -19,8 +18,6 @@
 ## Data flow
 ![Yandex Go Sequence Diagram](https://raw.githubusercontent.com/inno-se-toolkit/lab-01-market-product-and-git/4020c8c7e67e80677cd44fc46e6ee6893fce94b7/docs/diagrams/out/yandex-go/architecture-sequence/Sequence%20Diagram.svg)
 
-[Yandex Go Sequence Diagram Code](../../docs/diagrams/src/yandex-go/sequence-diagram.puml)
-
 **Group Description (Booking & Async Dispatch):**
 This group describes the process of confirming an order and finding a driver.
 1.  The **Mobile App** sends a `createOrder` request to the **API Gateway**, which forwards it to the **Dispatch Service**.
@@ -32,8 +29,6 @@ This group describes the process of confirming an order and finding a driver.
 
 ## Deployment
 ![Yandex Go Deployment Diagram](https://raw.githubusercontent.com/inno-se-toolkit/lab-01-market-product-and-git/4020c8c7e67e80677cd44fc46e6ee6893fce94b7/docs/diagrams/out/yandex-go/architecture-deployment/Deployment%20Diagram.svg)
-
-[Yandex Go Deployment Diagram Code](../../docs/diagrams/src/yandex-go/deployment-diagram.puml)
 
 **Description:**
 The system is deployed on **Yandex Cloud Infrastructure**. User requests coming from Smartphones or Web Browsers pass through a **Load Balancer** to the **API Gateway**. The application tier consists of microservices (Dispatch, Pricing, etc.) running as **Pods** within a **Kubernetes Cluster**. They communicate via gRPC. Data persistence is handled by managed clusters: **Redis** for caching, **Kafka** for message brokering, and **Data Storage Clusters** (ClickHouse for analytics, YDB for operations). External integration involves calls to Yandex Pay and Maps APIs.
