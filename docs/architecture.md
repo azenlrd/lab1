@@ -4,7 +4,7 @@
 **Description:** Yandex Go is a super-app providing ride-hailing, food delivery, and logistics services within a single ecosystem. It connects users with drivers and couriers to enable fast and convenient urban mobility and delivery.
 
 ## Main components
-![Yandex Go Component Diagram](../../docs/diagrams/out/yandex-go/component-diagram/Component%20Diagram.svg)
+![Yandex Go Component Diagram](https://raw.githubusercontent.com/inno-se-toolkit/lab-01-market-product-and-git/4020c8c7e67e80677cd44fc46e6ee6893fce94b7/docs/diagrams/out/yandex-go/architecture-component/Component%20Diagram.svg)
 
 [Yandex Go Component Diagram Code](../../docs/diagrams/src/yandex-go/component-diagram.puml)
 
@@ -17,7 +17,7 @@
 6.  **Operational DB (YDB):** A distributed SQL database used for storing critical operational data with strong consistency.
 
 ## Data flow
-![Yandex Go Sequence Diagram](../../docs/diagrams/out/yandex-go/sequence-diagram/Sequence%20Diagram.svg)
+![Yandex Go Sequence Diagram](https://raw.githubusercontent.com/inno-se-toolkit/lab-01-market-product-and-git/4020c8c7e67e80677cd44fc46e6ee6893fce94b7/docs/diagrams/out/yandex-go/architecture-sequence/Sequence%20Diagram.svg)
 
 [Yandex Go Sequence Diagram Code](../../docs/diagrams/src/yandex-go/sequence-diagram.puml)
 
@@ -31,7 +31,7 @@ This group describes the process of confirming an order and finding a driver.
 6.  The **Push Service** consumes this event and sends a notification ("Driver Found") to the **Mobile App**.
 
 ## Deployment
-![Yandex Go Deployment Diagram](../../docs/diagrams/out/yandex-go/deployment-diagram/Deployment%20Diagram.svg)
+![Yandex Go Deployment Diagram](https://raw.githubusercontent.com/inno-se-toolkit/lab-01-market-product-and-git/4020c8c7e67e80677cd44fc46e6ee6893fce94b7/docs/diagrams/out/yandex-go/architecture-deployment/Deployment%20Diagram.svg)
 
 [Yandex Go Deployment Diagram Code](../../docs/diagrams/src/yandex-go/deployment-diagram.puml)
 
